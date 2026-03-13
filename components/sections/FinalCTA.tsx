@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 
 const FinalCTA = () => {
   return (
@@ -22,18 +22,25 @@ const FinalCTA = () => {
           <span className="text-gradient">vision</span> ?
         </h2>
         <p className="text-muted-foreground text-lg mb-10 max-w-xl mx-auto">
-          Créons ensemble quelque chose d&apos;exceptionnel. Contactez-moi et
-          discutons de votre prochain projet.
+          Créons ensemble quelque chose d&apos;exceptionnel. Contactez-moi par
+          WhatsApp ou par e-mail.
         </p>
-        <a
-          href="https://wa.me/212614778321"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button variant="hero" size="lg" className="gap-2">
-            Me contacter <ArrowRight className="w-4 h-4" />
-          </Button>
-        </a>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="https://wa.me/212614778321"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="hero" size="lg" className="gap-2">
+              WhatsApp <ArrowRight className="w-4 h-4" />
+            </Button>
+          </a>
+          <a href="mailto:Aminehamdani707@gmail.com">
+            <Button variant="heroOutline" size="lg" className="gap-2">
+              <Mail className="w-4 h-4" /> E-mail
+            </Button>
+          </a>
+        </div>
       </motion.div>
     </section>
   );
