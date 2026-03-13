@@ -40,7 +40,7 @@ const Navbar = () => {
           className="text-xl font-bold tracking-tight text-foreground"
           style={{ fontFamily: "var(--font-display)" }}
         >
-          STUDIO<span className="text-primary">.</span>
+          Amine<span className="text-primary">.</span>
         </a>
 
         {/* Desktop links */}

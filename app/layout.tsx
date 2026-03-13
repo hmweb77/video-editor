@@ -18,7 +18,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Studio — Monteur Vidéo & Storyteller",
+  title: "Amine — Monteur Vidéo & Storyteller",
   description:
     "Monteur vidéo professionnel spécialisé dans le storytelling cinématique, le contenu de marque et le documentaire. Je transforme vos rushes en récits qui captivent.",
 };

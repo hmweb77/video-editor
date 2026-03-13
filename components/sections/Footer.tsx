@@ -9,7 +9,7 @@ const Footer = () => {
           className="text-lg font-bold tracking-tight text-foreground"
           style={{ fontFamily: "var(--font-display)" }}
         >
-          STUDIO<span className="text-primary">.</span>
+          Amine<span className="text-primary">.</span>
         </a>
         <div className="flex items-center gap-8 text-sm text-muted-foreground">
           <a href="#about" className="hover:text-foreground transition-colors">
