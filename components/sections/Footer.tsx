@@ -1,8 +1,6 @@
 "use client";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer className="border-t border-border bg-card py-12 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
@@ -15,10 +13,10 @@ const Footer = () => {
         </a>
         <div className="flex items-center gap-8 text-sm text-muted-foreground">
           <a href="#about" className="hover:text-foreground transition-colors">
-            About
+            À propos
           </a>
           <a href="#work" className="hover:text-foreground transition-colors">
-            Work
+            Réalisations
           </a>
           <a
             href="https://wa.me/212614778321"
@@ -31,7 +29,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="max-w-6xl mx-auto mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-        © {currentYear} Studio. All rights reserved.
+        © 2026 Studio. Tous droits réservés.
       </div>
     </footer>
   );

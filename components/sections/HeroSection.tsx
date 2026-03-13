@@ -7,11 +7,14 @@ import { Play } from "lucide-react";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Fond image de secours si la vidéo n'est pas disponible */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 w-full h-full object-cover bg-cover bg-center"
         style={{ backgroundImage: "url(/hero-bg.jpg)" }}
+        aria-hidden
       />
-      <div className="absolute inset-0 bg-background/80" />
+     
+
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <motion.p
@@ -20,7 +23,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6 }}
           className="text-primary font-medium tracking-[0.3em] uppercase text-sm mb-6"
         >
-          Video Editor & Storyteller
+          Monteur Vidéo & Storyteller
         </motion.p>
 
         <motion.h1
@@ -30,8 +33,8 @@ const HeroSection = () => {
           className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight mb-8"
           style={{ fontFamily: "var(--font-display)" }}
         >
-          I turn raw footage into{" "}
-          <span className="text-gradient">cinematic stories</span>
+          Je transforme vos rushes en{" "}
+          <span className="text-gradient">histoires qui marquent</span>
         </motion.h1>
 
         <motion.p
@@ -40,8 +43,8 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10"
         >
-          Crafting compelling narratives through precise editing, color grading,
-          and sound design that captivate audiences.
+          Montage cinématique, étalonnage et sound design, je donne à vos images
+          l&apos;émotion qu&apos;elles méritent.
         </motion.p>
 
         <motion.div
@@ -52,7 +55,7 @@ const HeroSection = () => {
         >
           <a href="#work">
             <Button variant="hero" size="lg" className="gap-2">
-              <Play className="w-4 h-4" /> Watch My Reel
+              <Play className="w-4 h-4" /> Voir mes réalisations
             </Button>
           </a>
           <a
@@ -61,13 +64,13 @@ const HeroSection = () => {
             rel="noopener noreferrer"
           >
             <Button variant="heroOutline" size="lg">
-              Let&apos;s Work Together
+              Discutons de votre projet
             </Button>
           </a>
         </motion.div>
       </div>
 
-    
+     
     </section>
   );
 };

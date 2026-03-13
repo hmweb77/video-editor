@@ -5,19 +5,19 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Mitchell",
-    role: "Brand Director, Lumina Co.",
-    text: "Absolutely phenomenal work. The final cut exceeded every expectation. The pacing, the transitions, the color — everything was perfect.",
+    name: "Zouhir",
+    role: "Directrice de marque, Lumina Co.",
+    text: "Un reel : 2.3M de vues. C'était un succès.",
   },
   {
-    name: "James Carter",
-    role: "YouTube Creator, 2M+ subs",
-    text: "Working with this editor transformed my channel. My retention rates doubled after the first video. Truly understands storytelling.",
+    name: "Reda",
+    role: "Créateur YouTube, 2M+ abonnés",
+    text: "Vidéo livrée en 24h.Et j'ai validé sans une seule retouche.",
   },
   {
-    name: "Elena Rossi",
-    role: "Independent Filmmaker",
-    text: "A rare talent who brings both technical precision and creative vision. My documentary wouldn't have the same emotional impact without their editing.",
+    name: "Sara",
+    role: "Réalisatrice indépendante",
+    text: "Ma rétention est passée de 30% à 65% dès la première vidéo.",
   },
 ];
 
@@ -33,13 +33,13 @@ const TestimonialsSection = () => {
           className="text-center mb-16"
         >
           <p className="text-primary tracking-[0.3em] uppercase text-xs font-medium mb-4">
-            Testimonials
+            Témoignages
           </p>
           <h2
             className="text-3xl md:text-5xl font-bold"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            What clients say
+            Ce que disent mes clients
           </h2>
         </motion.div>
 
@@ -63,7 +63,6 @@ const TestimonialsSection = () => {
               </p>
               <div>
                 <p className="font-semibold text-foreground">{t.name}</p>
-                <p className="text-muted-foreground text-sm">{t.role}</p>
               </div>
             </motion.div>
           ))}

@@ -18,9 +18,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Studio — Video Editor & Storyteller",
+  title: "Studio — Monteur Vidéo & Storyteller",
   description:
-    "Professional video editor specializing in cinematic storytelling, brand content, and documentary filmmaking. Transforming raw footage into emotionally resonant narratives.",
+    "Monteur vidéo professionnel spécialisé dans le storytelling cinématique, le contenu de marque et le documentaire. Je transforme vos rushes en récits qui captivent.",
 };
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable}`}>
+    <html lang="fr" className={`${playfair.variable}`}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

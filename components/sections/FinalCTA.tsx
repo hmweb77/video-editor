@@ -18,12 +18,12 @@ const FinalCTA = () => {
           className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
           style={{ fontFamily: "var(--font-display)" }}
         >
-          Ready to bring your{" "}
-          <span className="text-gradient">vision to life</span>?
+          Prêt à donner vie à votre{" "}
+          <span className="text-gradient">vision</span> ?
         </h2>
         <p className="text-muted-foreground text-lg mb-10 max-w-xl mx-auto">
-          Let&apos;s create something extraordinary together. Get in touch and let&apos;s
-          discuss your next project.
+          Créons ensemble quelque chose d&apos;exceptionnel. Contactez-moi et
+          discutons de votre prochain projet.
         </p>
         <a
           href="https://wa.me/212614778321"
@@ -31,7 +31,7 @@ const FinalCTA = () => {
           rel="noopener noreferrer"
         >
           <Button variant="hero" size="lg" className="gap-2">
-            Get In Touch <ArrowRight className="w-4 h-4" />
+            Me contacter <ArrowRight className="w-4 h-4" />
           </Button>
         </a>
       </motion.div>
