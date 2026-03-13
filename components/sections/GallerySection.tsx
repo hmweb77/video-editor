@@ -4,17 +4,22 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const videos = [
-  { title: "Brand Film — Lumina", category: "Commercial", reelUrl: "https://www.instagram.com/p/DQ4m8jAAHnY/" },
-  { title: "Travel Documentary", category: "Documentary", reelUrl: "https://www.instagram.com/p/DQ1y_HsjUo_/" },
-  { title: "Music Video — Echoes", category: "Music Video", reelUrl: "https://www.instagram.com/p/DVzIAxYIlPz/" },
-  { title: "Product Launch Reel", category: "Commercial", reelUrl: "https://www.instagram.com/p/DVt-aBFItn8/" },
-  { title: "Short Film — Dusk", category: "Narrative", reelUrl: "https://www.instagram.com/p/DVo00rTIrS_/" },
-  { title: "Event Highlight", category: "Event", reelUrl: "https://www.instagram.com/p/DVbCS3MijDl/" },
-  { title: "Event Highlight", category: "Event", reelUrl: "https://www.instagram.com/p/DVzInTMjU2X/" },
-  { title: "Event Highlight", category: "Event", reelUrl: "https://www.instagram.com/p/DVo0SB8jWHW/" },
-  { title: "Event Highlight", category: "Event", reelUrl: "https://www.instagram.com/p/DVhH0vijDmX/" },
-  { title: "Event Highlight", category: "Event", reelUrl: "https://www.instagram.com/p/DVCDQKZDDDj/" },
-  { title: "Event Highlight", category: "Event", reelUrl: "https://www.instagram.com/p/DUghjsDjOog/" },
+  { title: "Brand Film — Lumina", category: "zouhir", reelUrl: "https://www.instagram.com/p/DQ4m8jAAHnY/" },
+  { title: "Music Video — Echoes", category: "reda", reelUrl: "https://www.instagram.com/p/DVzIAxYIlPz/" },
+  { title: "Event Highlight", category: "sara", reelUrl: "https://www.instagram.com/p/DVhH0vijDmX/" },
+  { title: "Event Highlight", category: "simo", reelUrl: "https://www.instagram.com/p/DVCDQKZDDDj/" },
+  { title: "Event Highlight", category: "zouhir", reelUrl: "https://www.instagram.com/p/DSshoFuDwhx/" },
+  { title: "Product Launch Reel", category: "reda", reelUrl: "https://www.instagram.com/p/DVt-aBFItn8/" },
+  { title: "Travel Documentary", category: "zouhir", reelUrl: "https://www.instagram.com/p/DQ1y_HsjUo_/" },
+  { title: "Event Highlight", category: "sara", reelUrl: "https://www.instagram.com/p/DVo0SB8jWHW/" },
+  { title: "Event Highlight", category: "simo", reelUrl: "https://www.instagram.com/p/DUghjsDjOog/" },
+  { title: "Travel Documentary", category: "zouhir", reelUrl: "https://www.instagram.com/p/DQ1y_HsjUo_/" },
+  { title: "Short Film — Dusk", category: "reda", reelUrl: "https://www.instagram.com/p/DVo00rTIrS_/" },
+  { title: "Short Film — Dusk", category: "simo", reelUrl: "https://www.instagram.com/p/DV1hrnTjHL7/" },
+  { title: "Event Highlight", category: "sara", reelUrl: "https://www.instagram.com/p/DVzInTMjU2X/" },
+  { title: "Event Highlight", category: "reda", reelUrl: "https://www.instagram.com/p/DVbCS3MijDl/" },
+
+
 ];
 
 function getEmbedUrl(url: string): string {
