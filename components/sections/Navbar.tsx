@@ -10,7 +10,7 @@ import { supportedLngs, localeLabels, type Locale } from "@/lib/i18n";
 const navLinkKeys = [
   { href: "#about", key: "about" as const },
   { href: "#work", key: "work" as const },
-  { href: "https://wa.me/212614778321", key: "contact" as const, external: true, primary: true },
+  { href: "https://wa.me/212708835156", key: "contact" as const, external: true, primary: true },
 ] as const;
 
 type NavLink = (typeof navLinkKeys)[number];

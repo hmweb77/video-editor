@@ -30,7 +30,7 @@ const FinalCTA = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="https://wa.me/212614778321"
+            href="https://wa.me/212708835156"
             target="_blank"
             rel="noopener noreferrer"
           >

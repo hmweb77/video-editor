@@ -23,7 +23,7 @@ const Footer = () => {
             {t("footer.work")}
           </a>
           <a
-            href="https://wa.me/212614778321"
+            href="https://wa.me/212708835156"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary hover:text-primary/80 transition-colors font-medium"

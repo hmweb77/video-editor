@@ -58,7 +58,7 @@ const HeroSection = () => {
             </Button>
           </a>
           <a
-            href="https://wa.me/212614778321"
+            href="https://wa.me/212708835156"
             target="_blank"
             rel="noopener noreferrer"
           >
