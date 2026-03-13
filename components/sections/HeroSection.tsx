@@ -3,18 +3,18 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Fond image de secours si la vidéo n'est pas disponible */}
       <div
         className="absolute inset-0 w-full h-full object-cover bg-cover bg-center"
         style={{ backgroundImage: "url(/hero-bg.jpg)" }}
         aria-hidden
       />
-     
-
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <motion.p
@@ -23,7 +23,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6 }}
           className="text-primary font-medium tracking-[0.3em] uppercase text-sm mb-6"
         >
-          Monteur Vidéo & Storyteller
+          {t("hero.badge")}
         </motion.p>
 
         <motion.h1
@@ -33,8 +33,8 @@ const HeroSection = () => {
           className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight mb-8"
           style={{ fontFamily: "var(--font-display)" }}
         >
-          Je transforme vos rushes en{" "}
-          <span className="text-gradient">histoires qui marquent</span>
+          {t("hero.title")}{" "}
+          <span className="text-gradient">{t("hero.titleHighlight")}</span>
         </motion.h1>
 
         <motion.p
@@ -43,8 +43,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10"
         >
-          Montage cinématique, étalonnage et sound design, je donne à vos images
-          l&apos;émotion qu&apos;elles méritent.
+          {t("hero.description")}
         </motion.p>
 
         <motion.div
@@ -55,7 +54,7 @@ const HeroSection = () => {
         >
           <a href="#work">
             <Button variant="hero" size="lg" className="gap-2">
-              <Play className="w-4 h-4" /> Voir mes réalisations
+              <Play className="w-4 h-4" /> {t("hero.ctaWork")}
             </Button>
           </a>
           <a
@@ -64,13 +63,11 @@ const HeroSection = () => {
             rel="noopener noreferrer"
           >
             <Button variant="heroOutline" size="lg">
-              Discutons de votre projet
+              {t("hero.ctaContact")}
             </Button>
           </a>
         </motion.div>
       </div>
-
-     
     </section>
   );
 };

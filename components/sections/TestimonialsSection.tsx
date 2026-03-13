@@ -2,26 +2,13 @@
 
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
-const testimonials = [
-  {
-    name: "Zouhir",
-    role: "Directrice de marque, Lumina Co.",
-    text: "Un reel : 2.3M de vues. C'était un succès.",
-  },
-  {
-    name: "Reda",
-    role: "Créateur YouTube, 2M+ abonnés",
-    text: "Vidéo livrée en 24h.Et j'ai validé sans une seule retouche.",
-  },
-  {
-    name: "Sara",
-    role: "Réalisatrice indépendante",
-    text: "Ma rétention est passée de 30% à 65% dès la première vidéo.",
-  },
-];
+const testimonialKeys = ["zouhir", "reda", "sara"] as const;
 
 const TestimonialsSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="py-24 md:py-32 px-6 bg-secondary/30">
       <div className="max-w-6xl mx-auto">
@@ -33,20 +20,20 @@ const TestimonialsSection = () => {
           className="text-center mb-16"
         >
           <p className="text-primary tracking-[0.3em] uppercase text-xs font-medium mb-4">
-            Témoignages
+            {t("testimonials.badge")}
           </p>
           <h2
             className="text-3xl md:text-5xl font-bold"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            Ce que disent mes clients
+            {t("testimonials.title")}
           </h2>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((t, i) => (
+          {testimonialKeys.map((key, i) => (
             <motion.div
-              key={t.name}
+              key={key}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -59,10 +46,13 @@ const TestimonialsSection = () => {
                 ))}
               </div>
               <p className="text-secondary-foreground leading-relaxed flex-1 mb-6">
-                &quot;{t.text}&quot;
+                &quot;{t(`testimonials.${key}.text`)}&quot;
               </p>
               <div>
-                <p className="font-semibold text-foreground">{t.name}</p>
+                <p className="font-semibold text-foreground capitalize">{key}</p>
+                <p className="text-sm text-muted-foreground">
+                  {t(`testimonials.${key}.role`)}
+                </p>
               </div>
             </motion.div>
           ))}

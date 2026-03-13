@@ -1,6 +1,10 @@
 "use client";
 
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="border-t border-border bg-card py-12 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
@@ -13,10 +17,10 @@ const Footer = () => {
         </a>
         <div className="flex items-center gap-8 text-sm text-muted-foreground">
           <a href="#about" className="hover:text-foreground transition-colors">
-            À propos
+            {t("footer.about")}
           </a>
           <a href="#work" className="hover:text-foreground transition-colors">
-            Réalisations
+            {t("footer.work")}
           </a>
           <a
             href="https://wa.me/212614778321"
@@ -24,12 +28,12 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="text-primary hover:text-primary/80 transition-colors font-medium"
           >
-            Contact
+            {t("footer.contact")}
           </a>
         </div>
       </div>
       <div className="max-w-6xl mx-auto mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-        © 2026 Studio. Tous droits réservés.
+        {t("footer.copyright")}
       </div>
     </footer>
   );

@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
-// Add your Instagram reel/post URLs — they will be embedded and display as on Instagram.
 const videos = [
   { title: "Brand Film — Lumina", category: "Commercial", reelUrl: "https://www.instagram.com/p/DQ4m8jAAHnY/" },
   { title: "Travel Documentary", category: "Documentary", reelUrl: "https://www.instagram.com/p/DQ1y_HsjUo_/" },
@@ -23,6 +23,8 @@ function getEmbedUrl(url: string): string {
 }
 
 const GallerySection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="work" className="py-24 md:py-32 px-6">
       <div className="max-w-6xl mx-auto">
@@ -34,13 +36,13 @@ const GallerySection = () => {
           className="text-center mb-16"
         >
           <p className="text-primary tracking-[0.3em] uppercase text-xs font-medium mb-4">
-            Portfolio
+            {t("gallery.badge")}
           </p>
           <h2
             className="text-3xl md:text-5xl font-bold"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            Selected work
+            {t("gallery.title")}
           </h2>
         </motion.div>
 
@@ -63,10 +65,6 @@ const GallerySection = () => {
                   allowFullScreen
                 />
               </div>
-              {/* <div className="text-center">
-                <p className="font-semibold text-foreground text-sm">{video.title}</p>
-                <p className="text-muted-foreground text-xs mt-1">{video.category}</p>
-              </div> */}
             </motion.div>
           ))}
         </div>

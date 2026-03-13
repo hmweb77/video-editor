@@ -1,0 +1,80 @@
+{
+  "navbar": {
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu"
+  },
+  "hero": {
+    "badge": "Video Editor & Storyteller",
+    "title": "I turn your footage into",
+    "titleHighlight": "stories that stick",
+    "description": "Cinematic editing, color grading and sound design — I give your images the emotion they deserve.",
+    "ctaWork": "View my work",
+    "ctaContact": "Let's discuss your project"
+  },
+  "about": {
+    "badge": "About",
+    "title": "+2 years bringing visual stories to life",
+    "body": "I've been a video editor for 2 years. What started as a passion became a craft, then an obsession. I've edited for many creators. The common thread? Every time, I'm looking for the same thing: the moment when the viewer forgets they're watching a video. Editing, color grading and sound design — I handle it all. But if I had to sum up what I do in one sentence: I take your rushes and turn them into something people watch to the end.",
+    "statProjects": "Projects delivered",
+    "statClients": "Happy clients",
+    "statYears": "Years of experience",
+    "imageAlt": "Video editor at work in studio"
+  },
+  "services": {
+    "badge": "Services",
+    "title": "What I do for you",
+    "videoEditing": {
+      "title": "Video Editing",
+      "description": "From rushes to final cut — narrative structure, rhythm, transitions and pacing that keep your audience hooked."
+    },
+    "colorGrading": {
+      "title": "Color Grading",
+      "description": "Custom cinematic looks that tell a story through color and strengthen your visual identity."
+    },
+    "soundDesign": {
+      "title": "Sound Design",
+      "description": "Music, sound effects and audio mixing for full immersion that amplifies every emotion."
+    },
+    "socialContent": {
+      "title": "Social Media Content",
+      "description": "Formats optimized for Instagram, YouTube and TikTok — videos designed for engagement and sharing."
+    }
+  },
+  "gallery": {
+    "badge": "Portfolio",
+    "title": "Selected work"
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "What my clients say",
+    "zouhir": {
+      "role": "Brand Director, Lumina Co.",
+      "text": "One reel: 2.3M views. It was a hit."
+    },
+    "reda": {
+      "role": "YouTube Creator, 2M+ subscribers",
+      "text": "Video delivered in 24h. And I approved it without a single revision."
+    },
+    "sara": {
+      "role": "Independent Filmmaker",
+      "text": "My retention went from 30% to 65% from the first video."
+    }
+  },
+  "cta": {
+    "title": "Ready to bring your",
+    "titleHighlight": "vision",
+    "titleSuffix": "to life?",
+    "description": "Let's create something exceptional together. Reach out via WhatsApp or email.",
+    "whatsapp": "WhatsApp",
+    "email": "Email"
+  },
+  "footer": {
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact",
+    "copyright": "© 2026 Studio. All rights reserved."
+  }
+}

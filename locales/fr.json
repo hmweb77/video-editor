@@ -1,0 +1,80 @@
+{
+  "navbar": {
+    "about": "À propos",
+    "work": "Réalisations",
+    "contact": "Contact",
+    "closeMenu": "Fermer le menu",
+    "openMenu": "Ouvrir le menu"
+  },
+  "hero": {
+    "badge": "Monteur Vidéo & Storyteller",
+    "title": "Je transforme vos rushes en",
+    "titleHighlight": "histoires qui marquent",
+    "description": "Montage cinématique, étalonnage et sound design, je donne à vos images l'émotion qu'elles méritent.",
+    "ctaWork": "Voir mes réalisations",
+    "ctaContact": "Discutons de votre projet"
+  },
+  "about": {
+    "badge": "À propos",
+    "title": "+2 ans à donner vie aux histoires visuelles",
+    "body": "Je suis monteur vidéo depuis 2 ans. Ce qui a commencé comme une passion est devenu un métier puis une obsession. J'ai monté pour plusieurs des créateurs et Le point commun ? À chaque fois, je cherche la même chose : le moment où le spectateur oublie qu'il regarde une vidéo. Montage, étalonnage et sound design, je gère tout. Mais si je devais résumer ce que je fais en une phrase : je prends vos rushes et j'en fais quelque chose que les gens regardent jusqu'au bout.",
+    "statProjects": "Projets livrés",
+    "statClients": "Clients satisfaits",
+    "statYears": "Années d'expérience",
+    "imageAlt": "Monteur vidéo au travail en studio"
+  },
+  "services": {
+    "badge": "Services",
+    "title": "Ce que je fais pour vous",
+    "videoEditing": {
+      "title": "Montage Vidéo",
+      "description": "Du rush au film final, structure narrative, rythme, transitions et pacing qui tiennent votre audience en haleine."
+    },
+    "colorGrading": {
+      "title": "Étalonnage Couleur",
+      "description": "Des looks cinématiques sur mesure qui racontent une histoire à travers la couleur et renforcent l'identité visuelle."
+    },
+    "soundDesign": {
+      "title": "Sound Design",
+      "description": "Musique, effets sonores et mixage audio pour une immersion totale qui amplifie chaque émotion."
+    },
+    "socialContent": {
+      "title": "Contenu Réseaux Sociaux",
+      "description": "Formats optimisés pour Instagram, YouTube et TikTok, des vidéos pensées pour l'engagement et le partage."
+    }
+  },
+  "gallery": {
+    "badge": "Portfolio",
+    "title": "Selected work"
+  },
+  "testimonials": {
+    "badge": "Témoignages",
+    "title": "Ce que disent mes clients",
+    "zouhir": {
+      "role": "Directrice de marque, Lumina Co.",
+      "text": "Un reel : 2.3M de vues. C'était un succès."
+    },
+    "reda": {
+      "role": "Créateur YouTube, 2M+ abonnés",
+      "text": "Vidéo livrée en 24h. Et j'ai validé sans une seule retouche."
+    },
+    "sara": {
+      "role": "Réalisatrice indépendante",
+      "text": "Ma rétention est passée de 30% à 65% dès la première vidéo."
+    }
+  },
+  "cta": {
+    "title": "Prêt à donner vie à votre",
+    "titleHighlight": "vision",
+    "titleSuffix": " ?",
+    "description": "Créons ensemble quelque chose d'exceptionnel. Contactez-moi par WhatsApp ou par e-mail.",
+    "whatsapp": "WhatsApp",
+    "email": "E-mail"
+  },
+  "footer": {
+    "about": "À propos",
+    "work": "Réalisations",
+    "contact": "Contact",
+    "copyright": "© 2026 Studio. Tous droits réservés."
+  }
+}
