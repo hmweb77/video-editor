@@ -1,0 +1,75 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Play } from "lucide-react";
+
+const HeroSection = () => {
+  return (
+    <section className="relative  flex items-center justify-center overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url(/hero-bg.jpg)" }}
+      />
+      <div className="absolute inset-0 bg-background/80" />
+
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-primary font-medium tracking-[0.3em] uppercase text-sm mb-6"
+        >
+          Video Editor & Storyteller
+        </motion.p>
+
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight mb-8"
+          style={{ fontFamily: "var(--font-display)" }}
+        >
+          I turn raw footage into{" "}
+          <span className="text-gradient">cinematic stories</span>
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10"
+        >
+          Crafting compelling narratives through precise editing, color grading,
+          and sound design that captivate audiences.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="flex flex-col sm:flex-row gap-4 justify-center"
+        >
+          <a href="#work">
+            <Button variant="hero" size="lg" className="gap-2">
+              <Play className="w-4 h-4" /> Watch My Reel
+            </Button>
+          </a>
+          <a
+            href="https://wa.me/212614778321"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="heroOutline" size="lg">
+              Let&apos;s Work Together
+            </Button>
+          </a>
+        </motion.div>
+      </div>
+
+    
+    </section>
+  );
+};
+
+export default HeroSection;
